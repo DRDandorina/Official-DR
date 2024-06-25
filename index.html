@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D.R. Dandorina</title>
+    <style>
+        @keyframes shimmer {
+            0% { background-position: -1000px 0; }
+            100% { background-position: 1000px 0; }
+        }
+        
+        @keyframes glitter {
+            0%, 100% { opacity: 0; transform: scale(1); }
+            50% { opacity: 1; transform: scale(1.5); }
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(
+                to right,
+                #007BFF 20%,
+                #4CAF50 40%,
+                #007BFF 60%,
+                #4CAF50 80%
+            );
+            background-size: 200% auto;
+            animation: shimmer 5s linear infinite;
+            position: relative;
+        }
+        
+        header {
+            background-color: rgba(0, 123, 255, 0.9);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 4rem; /* Twice the normal size */
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #4CAF50;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        
+        nav a:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        
+        .logo {
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .logo img {
+            width: 100px;
+        }
+        
+        .container img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 8px;
+        }
+        
+        h2 {
+            color: #007BFF;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            bottom: 0;
+        }
+        
+        .glitter {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            pointer-events: none;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .glitter::before, .glitter::after {
+            content: '';
+            position: absolute;
+            width: 2px;
+            height: 2px;
+            background: white;
+            box-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
+            animation: glitter 2s infinite ease-in-out;
+        }
+        
+        .glitter::after {
+            animation-delay: 1s;
+        }
+        
+        .content {
+            position: relative;
+            z-index: 2;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>D.R. Dandorina</h1>
+        <p>The official website of the Democratic Republic of Dandorina, a country lead by Dan Kenneth and Marina.</p>
+    </header>
+    <nav>
+        <a href="#about-dan">About Dan</a>
+        <a href="#about-marina">About Marina</a>
+        <a href="#babytime">Babytime Activities</a>
+        <a href="#vlog">Vlog</a>
+        <a href="#events">Upcoming Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="logo">
+        <img src="moon_and_sun_logo.png" alt="Moon and Sun Logo">
+    </div>
+    <div class="content">
+        <section id="about-dan" class="container">
+            <h2>About Dan</h2>
+            <img src="about me dan.jpg" alt="Dan">
+            <p>Dan is the co-leader of the Democratic Republic Dandorina, ambassador of Europe and West Asia. He is known for his leadership and vision in guiding the nation towards economic prosperity. Dan loves Marina (?).</p>
+        </section>
+        <section id="about-marina" class="container">
+            <h2>About Marina</h2>
+            <img src="marina.jpg" alt="Marina">
+            <p>Marina is the co-leader of the Democratic Republic Dandorina, ambassador of Africa and Oceania. She has a strong focus on social welfare, beauty, and community development. Marina loves Dan.</p>
+        </section>
+        <section id="babytime" class="container">
+            <h2>Babytime Activities</h2>
+            <p>Join us for Babytime Activities, a series of fun and engaging events designed for babies.</p>
+            <img src="dr3.jpg" alt="Dan 2">
+            <a href="https://www.sporcle.com/games/g/africa">Countries of Africa. Can you name the African countries?</a><br>
+            <a href="https://www.sporcle.com/games/hscer/true-or-false-authors">True or False: Authors. Can you name the true/false answers about these literary statements?</a><br>
+            <a href="https://docs.google.com/document/d/1MvN26izS11yC5wHqWJXv0rBZTTPLzph271dfD1no7dU/edit?usp=sharing">BABYTIMEMOVIETIME</a>
+        </section>
+        <section id="vlog" class="container">
+            <h2>Vlog</h2>
+            <p>Welcome to our vlog! Here you'll find the latest updates and stories from the beloved leaders of the Democratic Republic Dandorina.</p>
+            <div class="image-row">
+                <img src="dr1.jpg" alt="Dan 1">
+            </div>
+            <a href="https://www.youtube.com/channel/UCnddKPzcOEIbY8fQjqXFFoQ">YouTube Channel of Danrina Yamamureno</a>
+        </section>
+        <section id="events" class="container">
+            <h2>Upcoming Events</h2>
+            <p>Stay tuned for our upcoming events. We have a variety of activities and gatherings planned for the community.</p>
+            <p>4TH DANNIVERSARINA on JULY 22nd, 2024, Monday.</p>
+            <p>Babytime every day @ Discord: <a href="https://discord.gg/GMezGaMD">Obi-dan and Evil Tith Lord's Channel</a></p>
+        </section>
+        <section id="contact" class="container">
+            <h2>Contact</h2>
+            <p>If you have any questions or would like to get in touch, please contact us at dankin.donurina@gmail.com.</p>
+        </section>
+        <footer>
+            <p>&copy; 2024 DR Dandorina. All rights reserved.</p>
+        </footer>
+    </div>
+    <
